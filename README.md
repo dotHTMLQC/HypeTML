@@ -2,7 +2,9 @@
 
 <h1 align="center">HypeTML</h1>
 
-Another powerful front-end framework for the web for easier web development.
+
+<h3 align="center">
+Another powerful front-end framework for the web for easier web development.</h3>
 
 ---
 
