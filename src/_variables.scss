@@ -4,8 +4,32 @@ $theme-colors: (
    "success": #2ce065,
    "danger": #fc5873,
    "warning": #ffc549,
-   "info": #38A5F8,
+   "info": #08c8af,
    "light": #f8f8fa,
    "dark": #434444,
    "muted": #d4d4d4
+);
+
+$alert-backgrounds: (
+    "primary" : #bedbfa,
+    "secondary" : #d9b8f6,
+    "success": #c9ffc9,
+    "danger": #fcc9d2,
+    "warning": #fff4cd,
+    "info": #b4fff5,
+    "light": #f8f8fa,
+    "dark": #e2e2e2,
+    "muted": #eaeaea
+);
+
+$alert-borders: (
+    "primary" : #acd2fb,
+    "secondary" : #ca9ef1,
+    "success": #b8e4b4,
+    "danger": #fc5873,
+    "warning": #ffc549,
+    "info": #38A5F8,
+    "light": #f8f8fa,
+    "dark": #434444,
+    "muted": #d4d4d4
 );

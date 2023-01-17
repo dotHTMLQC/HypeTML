@@ -1,0 +1,30 @@
+.alert {
+  padding: 0.75rem 1.25rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  // @each $name, $color in $theme-colors {
+  //     &.alert-#{$name} {
+  //         /* background color is color but lighter */
+  //         background-color: lighten($color, 35%);
+  //         color: $color;
+  //         border: lighten($color, 10%) solid;
+  //     }
+  // }
+  /* for each color in theme colors, but take background color from alert-backgrounds */
+  @each $name, $color in $theme-colors {
+    &.alert-#{$name} {
+      /* background color is color but lighter */
+      background-color: map-get($alert-backgrounds, $name);
+      @if ($name == "light" or $name == "muted") {
+        color: #212529;
+      } @else {
+        color: darken($color, 25%);
+      }
+      border: map-get($alert-borders, $name) solid;
+    }
+  }
+  /* borderless */
+  &.alert-borderless {
+    border: none;
+  }
+}
