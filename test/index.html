@@ -20,9 +20,32 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+
+      $(document).ready(function () {
+        $("#lights").click(function () {
+          $("body").toggleClass("dark");
+          //toggle data-hype-theme between light and dark
+          $("body").attr("data-hype-theme", function (i, attr) {
+            return attr == "light" ? "dark" : "light";
+          });
+        });
+      });
+
+
+
+    </script>
+    <style>
+      .dark {
+        background-color: #1e1e1e;
+        color: #fff;
+      }
+    </style>
   </head>
-  <body style="font-family: sans-serif">
+  <body style="font-family: sans-serif" data-hype-theme="light">
     <!-- Alerts -->
+    <button class="btn btn-primary" id="lights">Light Switch</button>
     <section id="alerts">
       <h1>Alerts</h1>
       <div>
@@ -34,7 +57,6 @@
         <div class="alert my-1 alert-info">This is a info alert!</div>
         <div class="alert my-1 alert-light">This is a light alert!</div>
         <div class="alert my-1 alert-dark">This is a dark alert!</div>
-        <div class="alert my-1 alert-muted">This is a muted alert!</div>
       </div>
       <div>
         <h4>Borderless Alert</h4>
@@ -61,9 +83,6 @@
         </div>
         <div class="alert my-1 alert-dark alert-borderless">
           This is a dark alert!
-        </div>
-        <div class="alert my-1 alert-muted alert-borderless">
-          This is a muted alert!
         </div>
       </div>
       <div>
@@ -92,9 +111,6 @@
         <div class="alert my-1 alert-dark alert-borderless">
           This alert has a link! <a class="alert-link" href="#">Click me!</a>
         </div>
-        <div class="alert my-1 alert-muted alert-borderless">
-          This alert has a link! <a class="alert-link" href="#">Click me!</a>
-        </div>
       </div>
     </section>
     <section id="buttons">
@@ -108,7 +124,6 @@
         <button class="btn mx-1 btn-info">Info</button>
         <button class="btn mx-1 btn-light">Light</button>
         <button class="btn mx-1 btn-dark">Dark</button>
-        <button class="btn mx-1 btn-muted">Muted</button>
         <button class="btn mx-1 btn-link">Link</button>
       </div>
       <div>
@@ -121,7 +136,6 @@
         <button class="btn disabled mx-1 btn-info">Info</button>
         <button class="btn disabled mx-1 btn-light">Light</button>
         <button class="btn disabled mx-1 btn-dark">Dark</button>
-        <button class="btn disabled mx-1 btn-muted">Muted</button>
       </div>
       <div>
         <h4>Buttons Sizes</h4>
@@ -139,7 +153,6 @@
         <button class="btn btn-pill mx-1 btn-info">Info</button>
         <button class="btn btn-pill mx-1 btn-light">Light</button>
         <button class="btn btn-pill mx-1 btn-dark">Dark</button>
-        <button class="btn btn-pill mx-1 btn-muted">Muted</button>
       </div>
       <div>
         <h4>Button Sharp</h4>
@@ -151,7 +164,6 @@
         <button class="btn btn-sharp mx-1 btn-info">Info</button>
         <button class="btn btn-sharp mx-1 btn-light">Light</button>
         <button class="btn btn-sharp mx-1 btn-dark">Dark</button>
-        <button class="btn btn-sharp mx-1 btn-muted">Muted</button>
       </div>
       <div>
         <h4>Buttons Outline</h4>
@@ -163,7 +175,6 @@
         <button class="btn btn-outline-info mx-1">Info</button>
         <button class="btn btn-outline-light mx-1">Light</button>
         <button class="btn btn-outline-dark mx-1">Dark</button>
-        <button class="btn btn-outline-muted mx-1">Muted</button>
       </div>
       <div>
         <h4>Buttons Outline Disabled</h4>
@@ -177,7 +188,6 @@
         <button class="btn btn-outline-info disabled mx-1">Info</button>
         <button class="btn btn-outline-light disabled mx-1">Light</button>
         <button class="btn btn-outline-dark disabled mx-1">Dark</button>
-        <button class="btn btn-outline-muted disabled mx-1">Muted</button>
       </div>
       <div>
         <h4>Buttons Pill Outline</h4>
@@ -191,7 +201,6 @@
         <button class="btn btn-pill btn-outline-info mx-1">Info</button>
         <button class="btn btn-pill btn-outline-light mx-1">Light</button>
         <button class="btn btn-pill btn-outline-dark mx-1">Dark</button>
-        <button class="btn btn-pill btn-outline-muted mx-1">Muted</button>
       </div>
       <div>
         <h4>Buttons Block</h4>
@@ -203,7 +212,6 @@
         <button class="btn btn-block btn-info mx-1">Info</button>
         <button class="btn btn-block btn-light mx-1">Light</button>
         <button class="btn btn-block btn-dark mx-1">Dark</button>
-        <button class="btn btn-block btn-muted mx-1">Muted</button>
       </div>
       <!-- Button Icon -->
       <div>
@@ -230,9 +238,6 @@
           <i class="fas fa-home"></i>
         </button>
         <button class="btn btn-icon btn-dark mx-1">
-          <i class="fas fa-home"></i>
-        </button>
-        <button class="btn btn-icon btn-muted mx-1">
           <i class="fas fa-home"></i>
         </button>
       </div>
@@ -262,9 +267,272 @@
         <button class="btn btn-icon btn-outline-dark mx-1">
           <i class="fas fa-home"></i>
         </button>
-        <button class="btn btn-icon btn-outline-muted mx-1">
-          <i class="fas fa-home"></i>
-        </button>
+      </div>
+    </section>
+    <section id="progress">
+      <h1>Progress</h1>
+      <div>
+        <h4>Progress Bar</h4>
+        <div class="progress my-1">
+          <div
+            class="progress-bar bg-primary"
+            role="progressbar"
+            style="width: 25%"
+          >
+            25%
+          </div>
+        </div>
+        <div class="progress my-1">
+          <div
+            class="progress-bar bg-secondary"
+            role="progressbar"
+            style="width: 50%"
+          >
+            50%
+          </div>
+        </div>
+        <div class="progress my-1">
+          <div
+            class="progress-bar bg-success"
+            role="progressbar"
+            style="width: 75%"
+          >
+            75%
+          </div>
+        </div>
+        <div class="progress my-1">
+          <div
+            class="progress-bar bg-danger"
+            role="progressbar"
+            style="width: 100%"
+          >
+            100%
+          </div>
+        </div>
+        <div class="progress my-1">
+          <div
+            class="progress-bar bg-warning"
+            role="progressbar"
+            style="width: 25%"
+          >
+            25%
+          </div>
+        </div>
+        <div class="progress my-1">
+          <div
+            class="progress-bar bg-info"
+            role="progressbar"
+            style="width: 50%"
+          >
+            50%
+          </div>
+        </div>
+        <div class="progress my-1">
+          <div
+            class="progress-bar bg-light"
+            role="progressbar"
+            style="width: 75%"
+          >
+            75%
+          </div>
+        </div>
+        <div class="progress my-1">
+          <div
+            class="progress-bar bg-dark"
+            role="progressbar"
+            style="width: 100%"
+          >
+            100%
+          </div>
+        </div>
+        <div>
+          <h4>Progress Bar Striped</h4>
+          <div class="progress my-1">
+            <div
+              class="progress-bar bg-primary striped"
+              role="progressbar"
+              style="width: 25%"
+            >
+              25%
+            </div>
+          </div>
+          <div class="progress my-1">
+            <div
+              class="progress-bar bg-secondary striped"
+              role="progressbar"
+              style="width: 50%"
+            >
+              50%
+            </div>
+          </div>
+          <div class="progress my-1">
+            <div
+              class="progress-bar bg-success striped"
+              role="progressbar"
+              style="width: 75%"
+            >
+              75%
+            </div>
+          </div>
+          <div class="progress my-1">
+            <div
+              class="progress-bar bg-danger striped"
+              role="progressbar"
+              style="width: 100%"
+            >
+              100%
+            </div>
+          </div>
+          <div class="progress my-1">
+            <div
+              class="progress-bar bg-warning striped"
+              role="progressbar"
+              style="width: 25%"
+            >
+              25%
+            </div>
+          </div>
+          <div class="progress my-1">
+            <div
+              class="progress-bar bg-info striped"
+              role="progressbar"
+              style="width: 50%"
+            >
+              50%
+            </div>
+          </div>
+          <div class="progress my-1">
+            <div
+              class="progress-bar bg-dark striped"
+              role="progressbar"
+              style="width: 100%"
+            >
+              100%
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4>Animated Progress Bar</h4>
+          <div class="progress my-1">
+            <div
+              class="progress-bar bg-primary striped animated"
+              role="progressbar"
+              style="width: 69%"
+            >
+              69%
+            </div>
+          </div>
+          <div class="progress my-1">
+            <div
+              class="progress-bar bg-secondary striped animated"
+              role="progressbar"
+              style="width: 69%"
+            >
+              69%
+            </div>
+          </div>
+          <div class="progress my-1">
+            <div
+              class="progress-bar bg-success striped animated"
+              role="progressbar"
+              style="width: 69%"
+            >
+              69%
+            </div>
+          </div>
+          <div class="progress my-1">
+            <div
+              class="progress-bar bg-danger striped animated"
+              role="progressbar"
+              style="width: 69%"
+            >
+              69%
+            </div>
+          </div>
+          <div class="progress my-1">
+            <div
+              class="progress-bar bg-warning striped animated"
+              role="progressbar"
+              style="width: 69%"
+            >
+              69%
+            </div>
+          </div>
+          <div class="progress my-1">
+            <div
+              class="progress-bar bg-info striped animated"
+              role="progressbar"
+              style="width: 69%"
+            >
+              69%
+            </div>
+          </div>
+          <div class="progress my-1">
+            <div
+              class="progress-bar bg-dark striped animated"
+              role="progressbar"
+              style="width: 69%"
+            >
+              69%
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4>Animation Speed</h4>
+          <div class="progress my-1">
+            <div
+              class="progress-bar bg-primary striped animated-slow"
+              role="progressbar"
+              style="width: 69%"
+            >
+              69%
+            </div>
+          </div>
+          <div class="progress my-1">
+            <div
+              class="progress-bar bg-primary striped animated"
+              role="progressbar"
+              style="width: 69%"
+            >
+              69%
+            </div>
+          </div>
+          <div class="progress my-1">
+            <div
+              class="progress-bar bg-primary striped animated-fast"
+              role="progressbar"
+              style="width: 69%"
+            >
+              69%
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>Multiple Progress Bar</h4>
+        <div class="progress my-1">
+          <div
+            class="progress-bar bg-primary striped animated"
+            role="progressbar"
+            style="width: 15%"
+          >
+            15%
+          </div>
+          <div
+            class="progress-bar bg-success striped animated"
+            role="progressbar"
+            style="width: 30%"
+          >
+            30%
+          </div>
+          <div
+            class="progress-bar bg-warning striped animated"
+            role="progressbar"
+            style="width: 20%"
+          >
+            20%
+          </div>
+        </div>
       </div>
     </section>
   </body>

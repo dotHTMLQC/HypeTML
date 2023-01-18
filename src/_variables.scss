@@ -1,35 +1,82 @@
 $theme-colors: (
-   "primary" : #3376ea,
-   "secondary" : #a752f2,
-   "success": #2ce065,
-   "danger": #fc5873,
-   "warning": #ffc549,
-   "info": #08c8af,
-   "light": #f8f8fa,
-   "dark": #434444,
-   "muted": #d4d4d4
-);
-
-$alert-backgrounds: (
-    "primary" : #bedbfa,
-    "secondary" : #d9b8f6,
-    "success": #c9ffc9,
-    "danger": #fcc9d2,
-    "warning": #fff4cd,
-    "info": #b4fff5,
+    "primary": #478af5,
+    "secondary": #858585,
+    "success": #46b44a,
+    "info": #00bcd4,
+    "warning": #fbc831,
+    "danger": #e53629,
     "light": #f8f8fa,
-    "dark": #e2e2e2,
-    "muted": #eaeaea
-);
+    "dark": #212529
+) !default;
 
-$alert-borders: (
-    "primary" : #acd2fb,
-    "secondary" : #ca9ef1,
-    "success": #b8e4b4,
-    "danger": #fc5873,
-    "warning": #ffc549,
-    "info": #38A5F8,
-    "light": #f8f8fa,
-    "dark": #434444,
-    "muted": #d4d4d4
-);
+$soft-backgrounds: (
+    "primary": #cfe2ff,
+    "secondary": #dddddd,
+    "success": #c8e6c9,
+    "info": #b2ebf2,
+    "warning": #fff9c4,
+    "danger": #ffcdd2,
+    "light": #fff,
+    "dark": #c7c7c7
+) !default;
+
+$soft-borders: (
+    "primary": #9ec5fe,
+    "secondary": #bcbcbc,
+    "success": #a5d6a7,
+    "info": #80deea,
+    "warning": #fcca4a,
+    "danger": #ef9a9a,
+    "light": #e0e0e0,
+    "dark": #9e9e9e
+) !default;
+
+$soft-text: (
+    "primary": #2256ff,
+    "secondary": #474747,
+    "success": #2e7d32,
+    "info": #006064,
+    "warning": #d6a800,
+    "danger": #d32f2f,
+    "light": #212529,
+    "dark": #000
+) !default;
+
+$hard-backgrounds: (
+    "primary": #08224a,
+    "secondary": hsla(0, 0%, 100%, 0.1),
+    "success": #092a1b,
+    "info": #002d2d,
+    "warning": #3e2a00,
+    "danger": #350404,
+    "light": rgba(255, 255, 255, 0.25),
+    "dark": #242424
+) !default;
+
+$hard-borders: (
+    "primary": #4872b0,
+    "secondary": #bcbcbc,
+    "success": #16623e,
+    "info": #006064,
+    "warning": #a67f0a,
+    "danger": #850000,
+    "light": #e0e0e0,
+    "dark": #2b2b2b
+) !default;
+
+$hard-text: (
+    "primary": #84b5fe,
+    "secondary": #cfcfcf,
+    "success": #75b798,
+    "info": #2fa9b9,
+    "warning": #edc856,
+    "danger": #f37c86,
+    "light": #ffffff,
+    "dark": #b6b6b6
+) !default;
+
+$progress-background: #e2e2e2;
+
+$prefix: ht- !default;
+
+

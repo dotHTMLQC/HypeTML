@@ -1,0 +1,6 @@
+/* bg for every color */
+@each $name, $color in $theme-colors {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}

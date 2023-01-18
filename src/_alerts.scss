@@ -1,26 +1,14 @@
 .alert {
-  padding: 0.75rem 1.25rem;
-  border: 1px solid transparent;
+  padding: 1rem;
+  border: 1px solid;
   border-radius: 0.25rem;
-  // @each $name, $color in $theme-colors {
-  //     &.alert-#{$name} {
-  //         /* background color is color but lighter */
-  //         background-color: lighten($color, 35%);
-  //         color: $color;
-  //         border: lighten($color, 10%) solid;
-  //     }
-  // }
   /* for each color in theme colors, but take background color from alert-backgrounds */
   @each $name, $color in $theme-colors {
     &.alert-#{$name} {
       /* background color is color but lighter */
-      background-color: map-get($alert-backgrounds, $name);
-      @if ($name == "light" or $name == "muted") {
-        color: #212529;
-      } @else {
-        color: darken($color, 25%);
-      }
-      border: map-get($alert-borders, $name) solid;
+      background-color: var(--#{$prefix}#{$name}-bg);
+      color: var(--#{$prefix}#{$name}-text);
+      border: var(--#{$prefix}#{$name}-border) solid;
     }
   }
   /* borderless */
@@ -31,7 +19,7 @@
   /* link for each color */
   @each $name, $color in $theme-colors {
     &.alert-#{$name} .alert-link {
-      color: darken($color, 35%);
+      color: var(--#{$prefix}#{$name}-text);
       font-weight: bold;
       text-decoration: none;
       &:hover {
