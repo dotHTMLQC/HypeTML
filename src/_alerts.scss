@@ -27,4 +27,16 @@
   &.alert-borderless {
     border: none;
   }
+
+  /* link for each color */
+  @each $name, $color in $theme-colors {
+    &.alert-#{$name} .alert-link {
+      color: darken($color, 35%);
+      font-weight: bold;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
