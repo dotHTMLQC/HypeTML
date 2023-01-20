@@ -7,6 +7,12 @@
     <title>HypeTML Tester</title>
     <!-- Link the css file from dist -->
     <link rel="stylesheet" href="../dist/HypeTML.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -20,9 +26,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
     <script>
-
       $(document).ready(function () {
         $("#lights").click(function () {
           $("body").toggleClass("dark");
@@ -32,508 +41,133 @@
           });
         });
       });
-
-
-
     </script>
     <style>
       .dark {
         background-color: #1e1e1e;
         color: #fff;
       }
+      * {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
     </style>
   </head>
   <body style="font-family: sans-serif" data-hype-theme="light">
     <!-- Alerts -->
-    <button class="btn btn-primary" id="lights">Light Switch</button>
-    <section id="alerts">
-      <h1>Alerts</h1>
-      <div>
-        <div class="alert my-1 alert-primary">This is a primary alert!</div>
-        <div class="alert my-1 alert-secondary">This is a secondary alert!</div>
-        <div class="alert my-1 alert-success">This is a success alert!</div>
-        <div class="alert my-1 alert-danger">This is a danger alert!</div>
-        <div class="alert my-1 alert-warning">This is a warning alert!</div>
-        <div class="alert my-1 alert-info">This is a info alert!</div>
-        <div class="alert my-1 alert-light">This is a light alert!</div>
-        <div class="alert my-1 alert-dark">This is a dark alert!</div>
-      </div>
-      <div>
-        <h4>Borderless Alert</h4>
-        <div class="alert my-1 alert-primary alert-borderless">
-          This is a primary alert!
-        </div>
-        <div class="alert my-1 alert-secondary alert-borderless">
-          This is a secondary alert!
-        </div>
-        <div class="alert my-1 alert-success alert-borderless">
-          This is a success alert!
-        </div>
-        <div class="alert my-1 alert-danger alert-borderless">
-          This is a danger alert!
-        </div>
-        <div class="alert my-1 alert-warning alert-borderless">
-          This is a warning alert!
-        </div>
-        <div class="alert my-1 alert-info alert-borderless">
-          This is a info alert!
-        </div>
-        <div class="alert my-1 alert-light alert-borderless">
-          This is a light alert!
-        </div>
-        <div class="alert my-1 alert-dark alert-borderless">
-          This is a dark alert!
-        </div>
-      </div>
-      <div>
-        <h4>Link Alert</h4>
-        <div class="alert my-1 alert-primary alert-borderless">
-          This alert has a link! <a class="alert-link" href="#">Click me!</a>
-        </div>
-        <div class="alert my-1 alert-secondary alert-borderless">
-          This alert has a link! <a class="alert-link" href="#">Click me!</a>
-        </div>
-        <div class="alert my-1 alert-success alert-borderless">
-          This alert has a link! <a class="alert-link" href="#">Click me!</a>
-        </div>
-        <div class="alert my-1 alert-danger alert-borderless">
-          This alert has a link! <a class="alert-link" href="#">Click me!</a>
-        </div>
-        <div class="alert my-1 alert-warning alert-borderless">
-          This alert has a link! <a class="alert-link" href="#">Click me!</a>
-        </div>
-        <div class="alert my-1 alert-info alert-borderless">
-          This alert has a link! <a class="alert-link" href="#">Click me!</a>
-        </div>
-        <div class="alert my-1 alert-light alert-borderless">
-          This alert has a link! <a class="alert-link" href="#">Click me!</a>
-        </div>
-        <div class="alert my-1 alert-dark alert-borderless">
-          This alert has a link! <a class="alert-link" href="#">Click me!</a>
-        </div>
-      </div>
-    </section>
-    <section id="buttons">
+    <button class="btn btn-primary mx-4 my-4" id="lights">Light Switch</button>
+
+    <section style="padding: 25px">
       <h1>Buttons</h1>
+      <button class="btn btn-standard">Standard</button>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-red">Red</button>
+      <button class="btn btn-orange">Orange</button>
+      <button class="btn btn-yellow">Yellow</button>
+      <button class="btn btn-green">Green</button>
+      <button class="btn btn-teal">Teal</button>
+      <button class="btn btn-blue">Blue</button>
+      <button class="btn btn-violet">Violet</button>
+      <button class="btn btn-magenta">Magenta</button>
+      <button class="btn btn-pink">Pink</button>
+      <button class="btn btn-brown">Brown</button>
+      <button class="btn btn-gray">Gray</button>
+      <button class="btn btn-black">Black</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-danger">Danger</button>
       <div>
-        <button class="btn mx-1 btn-primary">Primary</button>
-        <button class="btn mx-1 btn-secondary">Secondary</button>
-        <button class="btn mx-1 btn-success">Success</button>
-        <button class="btn mx-1 btn-danger">Danger</button>
-        <button class="btn mx-1 btn-warning">Warning</button>
-        <button class="btn mx-1 btn-info">Info</button>
-        <button class="btn mx-1 btn-light">Light</button>
-        <button class="btn mx-1 btn-dark">Dark</button>
-        <button class="btn mx-1 btn-link">Link</button>
+        <h4>Hollow Buttons</h4>
+        <button class="btn btn-hollow-standard">Standard</button>
+        <button class="btn btn-hollow-primary">Primary</button>
+        <button class="btn btn-hollow-secondary">Secondary</button>
+        <button class="btn btn-hollow-red">Red</button>
+        <button class="btn btn-hollow-orange">Orange</button>
+        <button class="btn btn-hollow-yellow">Yellow</button>
+        <button class="btn btn-hollow-green">Green</button>
+        <button class="btn btn-hollow-teal">Teal</button>
+        <button class="btn btn-hollow-blue">Blue</button>
+        <button class="btn btn-hollow-violet">Violet</button>
+        <button class="btn btn-hollow-magenta">Magenta</button>
+        <button class="btn btn-hollow-pink">Pink</button>
+        <button class="btn btn-hollow-brown">Brown</button>
+        <button class="btn btn-hollow-gray">Gray</button>
+        <button class="btn btn-hollow-black">Black</button>
+        <button class="btn btn-hollow-success">Success</button>
+        <button class="btn btn-hollow-danger">Danger</button>
       </div>
       <div>
-        <h4>Buttons Disabled</h4>
-        <button class="btn disabled mx-1 btn-primary">Primary</button>
-        <button class="btn disabled mx-1 btn-secondary">Secondary</button>
-        <button class="btn disabled mx-1 btn-success">Success</button>
-        <button class="btn disabled mx-1 btn-danger">Danger</button>
-        <button class="btn disabled mx-1 btn-warning">Warning</button>
-        <button class="btn disabled mx-1 btn-info">Info</button>
-        <button class="btn disabled mx-1 btn-light">Light</button>
-        <button class="btn disabled mx-1 btn-dark">Dark</button>
+        <h4>Sizes</h4>
+        <button class="btn btn-primary btn-sm">Small</button>
+        <button class="btn btn-primary">Medium</button>
+        <button class="btn btn-primary btn-lg">Large</button>
       </div>
       <div>
-        <h4>Buttons Sizes</h4>
-        <button class="btn btn-sm mx-1 btn-primary">Small</button>
-        <button class="btn mx-1 btn-primary">Medium</button>
-        <button class="btn btn-lg mx-1 btn-primary">Large</button>
+        <h4>Styles</h4>
+        <button class="btn btn-primary disabled" disabled>Disabled</button>
+        <button class="btn btn-primary btn-pill">Pill</button>
+        <button class="btn btn-primary btn-sharp">Sharp</button>
       </div>
       <div>
-        <h4>Buttons Pill</h4>
-        <button class="btn btn-pill mx-1 btn-primary">Primary</button>
-        <button class="btn btn-pill mx-1 btn-secondary">Secondary</button>
-        <button class="btn btn-pill mx-1 btn-success">Success</button>
-        <button class="btn btn-pill mx-1 btn-danger">Danger</button>
-        <button class="btn btn-pill mx-1 btn-warning">Warning</button>
-        <button class="btn btn-pill mx-1 btn-info">Info</button>
-        <button class="btn btn-pill mx-1 btn-light">Light</button>
-        <button class="btn btn-pill mx-1 btn-dark">Dark</button>
-      </div>
-      <div>
-        <h4>Button Sharp</h4>
-        <button class="btn btn-sharp mx-1 btn-primary">Primary</button>
-        <button class="btn btn-sharp mx-1 btn-secondary">Secondary</button>
-        <button class="btn btn-sharp mx-1 btn-success">Success</button>
-        <button class="btn btn-sharp mx-1 btn-danger">Danger</button>
-        <button class="btn btn-sharp mx-1 btn-warning">Warning</button>
-        <button class="btn btn-sharp mx-1 btn-info">Info</button>
-        <button class="btn btn-sharp mx-1 btn-light">Light</button>
-        <button class="btn btn-sharp mx-1 btn-dark">Dark</button>
-      </div>
-      <div>
-        <h4>Buttons Outline</h4>
-        <button class="btn btn-outline-primary mx-1">Primary</button>
-        <button class="btn btn-outline-secondary mx-1">Secondary</button>
-        <button class="btn btn-outline-success mx-1">Success</button>
-        <button class="btn btn-outline-danger mx-1">Danger</button>
-        <button class="btn btn-outline-warning mx-1">Warning</button>
-        <button class="btn btn-outline-info mx-1">Info</button>
-        <button class="btn btn-outline-light mx-1">Light</button>
-        <button class="btn btn-outline-dark mx-1">Dark</button>
-      </div>
-      <div>
-        <h4>Buttons Outline Disabled</h4>
-        <button class="btn btn-outline-primary disabled mx-1">Primary</button>
-        <button class="btn btn-outline-secondary disabled mx-1">
-          Secondary
-        </button>
-        <button class="btn btn-outline-success disabled mx-1">Success</button>
-        <button class="btn btn-outline-danger disabled mx-1">Danger</button>
-        <button class="btn btn-outline-warning disabled mx-1">Warning</button>
-        <button class="btn btn-outline-info disabled mx-1">Info</button>
-        <button class="btn btn-outline-light disabled mx-1">Light</button>
-        <button class="btn btn-outline-dark disabled mx-1">Dark</button>
-      </div>
-      <div>
-        <h4>Buttons Pill Outline</h4>
-        <button class="btn btn-pill btn-outline-primary mx-1">Primary</button>
-        <button class="btn btn-pill btn-outline-secondary mx-1">
-          Secondary
-        </button>
-        <button class="btn btn-pill btn-outline-success mx-1">Success</button>
-        <button class="btn btn-pill btn-outline-danger mx-1">Danger</button>
-        <button class="btn btn-pill btn-outline-warning mx-1">Warning</button>
-        <button class="btn btn-pill btn-outline-info mx-1">Info</button>
-        <button class="btn btn-pill btn-outline-light mx-1">Light</button>
-        <button class="btn btn-pill btn-outline-dark mx-1">Dark</button>
-      </div>
-      <div>
-        <h4>Buttons Block</h4>
-        <button class="btn btn-block btn-primary mx-1">Primary</button>
-        <button class="btn btn-block btn-secondary mx-1">Secondary</button>
-        <button class="btn btn-block btn-success mx-1">Success</button>
-        <button class="btn btn-block btn-danger mx-1">Danger</button>
-        <button class="btn btn-block btn-warning mx-1">Warning</button>
-        <button class="btn btn-block btn-info mx-1">Info</button>
-        <button class="btn btn-block btn-light mx-1">Light</button>
-        <button class="btn btn-block btn-dark mx-1">Dark</button>
-      </div>
-      <!-- Button Icon -->
-      <div>
-        <h4>Button Icon</h4>
-        <button class="btn btn-icon btn-primary mx-1">
-          <i class="fas fa-home"></i>
-        </button>
-        <button class="btn btn-icon btn-secondary mx-1">
-          <i class="fas fa-home"></i>
-        </button>
-        <button class="btn btn-icon btn-success mx-1">
-          <i class="fas fa-home"></i>
-        </button>
-        <button class="btn btn-icon btn-danger mx-1">
-          <i class="fas fa-home"></i>
-        </button>
-        <button class="btn btn-icon btn-warning mx-1">
-          <i class="fas fa-home"></i>
-        </button>
-        <button class="btn btn-icon btn-info mx-1">
-          <i class="fas fa-home"></i>
-        </button>
-        <button class="btn btn-icon btn-light mx-1">
-          <i class="fas fa-home"></i>
-        </button>
-        <button class="btn btn-icon btn-dark mx-1">
-          <i class="fas fa-home"></i>
-        </button>
-      </div>
-      <div>
-        <h4>Button Icon Outline</h4>
-        <button class="btn btn-icon btn-outline-primary mx-1">
-          <i class="fas fa-home"></i>
-        </button>
-        <button class="btn btn-icon btn-outline-secondary mx-1">
-          <i class="fas fa-home"></i>
-        </button>
-        <button class="btn btn-icon btn-outline-success mx-1">
-          <i class="fas fa-home"></i>
-        </button>
-        <button class="btn btn-icon btn-outline-danger mx-1">
-          <i class="fas fa-home"></i>
-        </button>
-        <button class="btn btn-icon btn-outline-warning mx-1">
-          <i class="fas fa-home"></i>
-        </button>
-        <button class="btn btn-icon btn-outline-info mx-1">
-          <i class="fas fa-home"></i>
-        </button>
-        <button class="btn btn-icon btn-outline-light mx-1">
-          <i class="fas fa-home"></i>
-        </button>
-        <button class="btn btn-icon btn-outline-dark mx-1">
-          <i class="fas fa-home"></i>
-        </button>
+        <h4>Mono Buttons</h4>
+        <button class="btn btn-hollow-standard mono">Mono</button>
+        <button class="btn btn-hollow-primary mono">Mono</button>
+        <button class="btn btn-hollow-secondary mono">Mono</button>
+        <button class="btn btn-hollow-red mono">Mono</button>
+        <button class="btn btn-hollow-orange mono">Mono</button>
+        <button class="btn btn-hollow-yellow mono">Mono</button>
+        <button class="btn btn-hollow-green mono">Mono</button>
+        <button class="btn btn-hollow-teal mono">Mono</button>
+        <button class="btn btn-hollow-blue mono">Mono</button>
+        <button class="btn btn-hollow-violet mono">Mono</button>
+        <button class="btn btn-hollow-magenta mono">Mono</button>
+        <button class="btn btn-hollow-pink mono">Mono</button>
+        <button class="btn btn-hollow-brown mono">Mono</button>
+        <button class="btn btn-hollow-gray mono">Mono</button>
+        <button class="btn btn-hollow-black mono">Mono</button>
+        <button class="btn btn-hollow-success mono">Mono</button>
+        <button class="btn btn-hollow-danger mono">Mono</button>
       </div>
     </section>
-    <section id="progress">
-      <h1>Progress</h1>
-      <div>
-        <h4>Progress Bar</h4>
-        <div class="progress my-1">
-          <div
-            class="progress-bar bg-primary"
-            role="progressbar"
-            style="width: 25%"
-          >
-            25%
-          </div>
-        </div>
-        <div class="progress my-1">
-          <div
-            class="progress-bar bg-secondary"
-            role="progressbar"
-            style="width: 50%"
-          >
-            50%
-          </div>
-        </div>
-        <div class="progress my-1">
-          <div
-            class="progress-bar bg-success"
-            role="progressbar"
-            style="width: 75%"
-          >
-            75%
-          </div>
-        </div>
-        <div class="progress my-1">
-          <div
-            class="progress-bar bg-danger"
-            role="progressbar"
-            style="width: 100%"
-          >
-            100%
-          </div>
-        </div>
-        <div class="progress my-1">
-          <div
-            class="progress-bar bg-warning"
-            role="progressbar"
-            style="width: 25%"
-          >
-            25%
-          </div>
-        </div>
-        <div class="progress my-1">
-          <div
-            class="progress-bar bg-info"
-            role="progressbar"
-            style="width: 50%"
-          >
-            50%
-          </div>
-        </div>
-        <div class="progress my-1">
-          <div
-            class="progress-bar bg-light"
-            role="progressbar"
-            style="width: 75%"
-          >
-            75%
-          </div>
-        </div>
-        <div class="progress my-1">
-          <div
-            class="progress-bar bg-dark"
-            role="progressbar"
-            style="width: 100%"
-          >
-            100%
-          </div>
-        </div>
-        <div>
-          <h4>Progress Bar Striped</h4>
-          <div class="progress my-1">
-            <div
-              class="progress-bar bg-primary striped"
-              role="progressbar"
-              style="width: 25%"
-            >
-              25%
-            </div>
-          </div>
-          <div class="progress my-1">
-            <div
-              class="progress-bar bg-secondary striped"
-              role="progressbar"
-              style="width: 50%"
-            >
-              50%
-            </div>
-          </div>
-          <div class="progress my-1">
-            <div
-              class="progress-bar bg-success striped"
-              role="progressbar"
-              style="width: 75%"
-            >
-              75%
-            </div>
-          </div>
-          <div class="progress my-1">
-            <div
-              class="progress-bar bg-danger striped"
-              role="progressbar"
-              style="width: 100%"
-            >
-              100%
-            </div>
-          </div>
-          <div class="progress my-1">
-            <div
-              class="progress-bar bg-warning striped"
-              role="progressbar"
-              style="width: 25%"
-            >
-              25%
-            </div>
-          </div>
-          <div class="progress my-1">
-            <div
-              class="progress-bar bg-info striped"
-              role="progressbar"
-              style="width: 50%"
-            >
-              50%
-            </div>
-          </div>
-          <div class="progress my-1">
-            <div
-              class="progress-bar bg-dark striped"
-              role="progressbar"
-              style="width: 100%"
-            >
-              100%
+    <section>
+      <h1>Navbars</h1>
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <div class="navbar-brand"><img src="https://cdn.dothtml.ca/hypetml/logo/vector/default-monochrome.svg" alt="logo" style="width: 50%"></div>
+
+          <!-- <button class="navbar-toggler">
+            <span class="toggler-bars"></span>
+          </button> -->
+          <div class="navbar-collapse">
+            <div class="navbar-navigation" style="margin-left: auto !important">
+              <a href="#" class="navbar-link">Home</a
+              ><a href="#" class="navbar-link">Team</a
+              ><a href="#" class="navbar-link">Products</a
+              ><a href="#" class="navbar-link">Contact</a>
             </div>
           </div>
         </div>
-        <div>
-          <h4>Animated Progress Bar</h4>
-          <div class="progress my-1">
-            <div
-              class="progress-bar bg-primary striped animated"
-              role="progressbar"
-              style="width: 69%"
-            >
-              69%
-            </div>
-          </div>
-          <div class="progress my-1">
-            <div
-              class="progress-bar bg-secondary striped animated"
-              role="progressbar"
-              style="width: 69%"
-            >
-              69%
-            </div>
-          </div>
-          <div class="progress my-1">
-            <div
-              class="progress-bar bg-success striped animated"
-              role="progressbar"
-              style="width: 69%"
-            >
-              69%
-            </div>
-          </div>
-          <div class="progress my-1">
-            <div
-              class="progress-bar bg-danger striped animated"
-              role="progressbar"
-              style="width: 69%"
-            >
-              69%
-            </div>
-          </div>
-          <div class="progress my-1">
-            <div
-              class="progress-bar bg-warning striped animated"
-              role="progressbar"
-              style="width: 69%"
-            >
-              69%
-            </div>
-          </div>
-          <div class="progress my-1">
-            <div
-              class="progress-bar bg-info striped animated"
-              role="progressbar"
-              style="width: 69%"
-            >
-              69%
-            </div>
-          </div>
-          <div class="progress my-1">
-            <div
-              class="progress-bar bg-dark striped animated"
-              role="progressbar"
-              style="width: 69%"
-            >
-              69%
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <div class="navbar-brand">Navbar</div>
+
+          <!-- <button class="navbar-toggler">
+            <span class="toggler-bars"></span>
+          </button> -->
+          <div class="navbar-collapse">
+            <div class="navbar-navigation" style="margin-left: auto !important">
+              <a href="#" class="navbar-link">Home</a
+              ><a href="#" class="navbar-link">Team</a
+              ><a href="#" class="navbar-link">Products</a
+              ><a href="#" class="navbar-link">Contact</a>
             </div>
           </div>
         </div>
-        <div>
-          <h4>Animation Speed</h4>
-          <div class="progress my-1">
-            <div
-              class="progress-bar bg-primary striped animated-slow"
-              role="progressbar"
-              style="width: 69%"
-            >
-              69%
-            </div>
-          </div>
-          <div class="progress my-1">
-            <div
-              class="progress-bar bg-primary striped animated"
-              role="progressbar"
-              style="width: 69%"
-            >
-              69%
-            </div>
-          </div>
-          <div class="progress my-1">
-            <div
-              class="progress-bar bg-primary striped animated-fast"
-              role="progressbar"
-              style="width: 69%"
-            >
-              69%
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h4>Multiple Progress Bar</h4>
-        <div class="progress my-1">
-          <div
-            class="progress-bar bg-primary striped animated"
-            role="progressbar"
-            style="width: 15%"
-          >
-            15%
-          </div>
-          <div
-            class="progress-bar bg-success striped animated"
-            role="progressbar"
-            style="width: 30%"
-          >
-            30%
-          </div>
-          <div
-            class="progress-bar bg-warning striped animated"
-            role="progressbar"
-            style="width: 20%"
-          >
-            20%
-          </div>
-        </div>
-      </div>
+      </nav>
     </section>
   </body>
 </html>

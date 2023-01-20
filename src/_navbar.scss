@@ -1,0 +1,78 @@
+.navbar {
+
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+  }
+
+  &>.container, &>.container-fluid, &>.container-sm, &>.container-md, &>.container-lg, &>.container-xl, &>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+  }
+
+}
+
+.navbar-navigation {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.navbar-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #747474;
+  text-decoration: none;
+}
+
+.navbar-text {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  align-items: center;
+  flex-grow: 1;
+}
+
+//For everybreak point, generate class for breakpoints and expanding
+@each $breakpoint, $size in $breakpoints {
+  @include gen-media-breakpoint-min($breakpoint) {
+    .navbar-expand-#{$breakpoint} .navbar-navigation {
+      flex-direction: row;
+    }
+  }
+}
+
+@each $breakpoint, $size in $breakpoints {
+  @include gen-media-breakpoint-min($breakpoint) {
+    .navbar-expand-#{$breakpoint} .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto;
+    }
+  }
+}
+
+.navbar-light {
+  .navbar-link:hover {
+    color: #212121;
+  }
+}
+
+.navbar-dark {
+  .navbar-link:hover {
+    color: #f5f5f5;
+  }
+}

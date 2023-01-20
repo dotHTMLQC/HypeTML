@@ -4,18 +4,6 @@
         --#{$prefix}#{$name}: #{$color};
     }
 
-    @each $name, $color in $soft-backgrounds {
-        --#{$prefix}#{$name}-bg: #{$color};
-    }
-
-    @each $name, $color in $soft-borders {
-        --#{$prefix}#{$name}-border: #{$color};
-    }
-
-    @each $name, $color in $soft-text {
-        --#{$prefix}#{$name}-text: #{$color};
-    }
-
 }
 
 [data-hype-theme="dark"] {
@@ -24,16 +12,5 @@
         --#{$prefix}#{$name}: #{$color};
     }
 
-    @each $name, $color in $hard-backgrounds {
-        --#{$prefix}#{$name}-bg: #{$color};
-    }
-
-    @each $name, $color in $hard-borders {
-        --#{$prefix}#{$name}-border: #{$color};
-    }
-
-    @each $name, $color in $hard-text {
-        --#{$prefix}#{$name}-text: #{$color};
-    }
 
 }

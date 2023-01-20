@@ -1,0 +1,11 @@
+.container, .container-fluid {
+    @include make-container();
+}
+
+// @each $breakpoint, $max-width in $breakpoints {
+//     @include media-breakpoint-up($breakpoint) {
+//         .container-#{$breakpoint} {
+//             @extend .container-fluid;
+//         }
+//     }
+// }

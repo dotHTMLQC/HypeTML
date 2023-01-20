@@ -1,9 +1,15 @@
 @import "variables";
 @import "root";
 
-@import "alerts";
+@import "mixins/container";
+@import "mixins/responsive";
+
+@import "containers";
+
+// @import "alerts";
 @import "buttons";
-@import "progress";
+@import "navbar";
+// @import "progress";
 
 @import "helpers/bg";
 
