@@ -8,6 +8,8 @@ Another powerful front-end framework for the web for easier web development.</h6
 
 ---
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/eb7a5b71-2ef7-4b26-8f1f-1cdccb703d10/deploy-status)](https://app.netlify.com/sites/hypetml/deploys)
+
 ### What is HypeTML?
 
 HypeTML is a front-end framework for the web that makes it easier to develop websites. It is a framework that is built on top of HTML, CSS, and JavaScript. It is a framework that is built for developers, by developers.
