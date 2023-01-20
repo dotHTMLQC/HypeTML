@@ -4,6 +4,14 @@
         --#{$prefix}#{$name}: #{$color};
     }
 
+    @each $name, $color in $soft-theme-colors {
+        --#{$prefix}#{$name}-soft: #{$color};
+    }
+
+    @each $name, $color in $accent-theme-colors {
+        --#{$prefix}#{$name}-accent: #{$color};
+    }
+
 }
 
 [data-hype-theme="dark"] {

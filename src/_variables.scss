@@ -19,6 +19,48 @@ $theme-colors: (
 
 ) !default;
 
+$accent-theme-colors: (
+    "standard": #f8f9fa,
+    "primary": #177ac6,
+    "secondary": #7d7d7d,
+    "red": #c71c1c,
+    "orange": #e66c00,
+    "yellow": #e6b200,
+    "green": #0a6e1a,
+    "teal": #00a99a,
+    "blue": #0f5faa,
+    "violet": #7a00e6,
+    "magenta": #c31cc7,
+    "pink" : #e6007a,
+    "brown": #6e3b1a,
+    "gray": #808080,
+    "black": #000000,
+    "success": #2ea12e,
+    "danger": #c71c1c,
+
+) !default;
+
+$soft-theme-colors: (
+    "standard": #f8f9fa,
+    "primary": #afdbfc,
+    "secondary": #e9e9e9,
+    "red": #f8c8c8,
+    "orange": #ffe0c8,
+    "yellow": #fff0c8,
+    "green": #c8f0c8,
+    "teal": #c8f8f8,
+    "blue": #c8e0fc,
+    "violet": #e0c8ff,
+    "magenta": #fcc8fc,
+    "pink" : #ffc8f0,
+    "brown": #d7c0b4,
+    "gray": #d0d0d0,
+    "black": #929292,
+    "success": #c8f8c8,
+    "danger": #fcc8c8,
+
+) !default;
+
 $breakpoints: (
     "xs": 0,
     "sm": 576px,

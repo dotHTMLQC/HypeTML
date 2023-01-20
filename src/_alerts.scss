@@ -1,14 +1,46 @@
+// .alert {
+//   padding: 1rem;
+//   border: 1px solid;
+//   border-radius: 0.25rem;
+//   /* for each color in theme colors, but take background color from alert-backgrounds */
+//   @each $name, $color in $theme-colors {
+//     &.alert-#{$name} {
+//       /* background color is color but lighter */
+//       background-color: var(--#{$prefix}#{$name}-bg);
+//       color: var(--#{$prefix}#{$name}-text);
+//       border: var(--#{$prefix}#{$name}-border) solid;
+//     }
+//   }
+//   /* borderless */
+//   &.alert-borderless {
+//     border: none;
+//   }
+
+//   /* link for each color */
+//   @each $name, $color in $theme-colors {
+//     &.alert-#{$name} .alert-link {
+//       color: var(--#{$prefix}#{$name}-text);
+//       font-weight: bold;
+//       text-decoration: none;
+//       &:hover {
+//         text-decoration: underline;
+//       }
+//     }
+//   }
+// }
+
 .alert {
   padding: 1rem;
-  border: 1px solid;
   border-radius: 0.25rem;
   /* for each color in theme colors, but take background color from alert-backgrounds */
   @each $name, $color in $theme-colors {
-    &.alert-#{$name} {
-      /* background color is color but lighter */
-      background-color: var(--#{$prefix}#{$name}-bg);
-      color: var(--#{$prefix}#{$name}-text);
-      border: var(--#{$prefix}#{$name}-border) solid;
+    @if ($name != "standard") {
+      &.alert-#{$name} {
+        /* background color is color but lighter */
+        background-color: var(--#{$prefix}#{$name}-soft);
+        color: darken($color, 25%);
+        border: var(--#{$prefix}#{$name}-accent) 2px solid;
+      }
     }
   }
   /* borderless */

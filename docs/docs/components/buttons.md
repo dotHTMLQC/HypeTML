@@ -18,6 +18,8 @@ Buttons are used to trigger actions or act as a link.
 
 ## Examples
 
+You will find examples of all the different types of buttons below.
+
 ### Default
 
 Here is an example of a default button.
@@ -139,6 +141,14 @@ Buttons can be any color.
 
 ### Utilities
 
+:::info
+
+More Utilities will be added in a future update. Stay tuned!
+
+:::
+
+Here are some utility buttons.
+
 <button className="btn btn-success my-1 mx-1">Success</button>
 <button className="btn btn-danger my-1 mx-1">Danger</button>
 
@@ -150,6 +160,8 @@ Buttons can be any color.
 ## Variants
 
 ### Monochrome
+
+This variant is always gray but on hover it will change to the color of the button.
 
 <button className="btn btn-hollow-primary mono my-1 mx-1">Primary</button>
 <button className="btn btn-hollow-secondary mono my-1 mx-1">Secondary</button>
