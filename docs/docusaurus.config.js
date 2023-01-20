@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'HypeTML',
   tagline: 'A simple, lightweight, and fast Front-End framework',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://hypetml.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
