@@ -77,7 +77,7 @@ const config = {
           {
             type: "html",
             position: "right",
-            value: "<a href='https://github.com/dothtmlqc/hypetml' class='navbar__item navbar__link' rel='noopener noreferrer'><i class='fab fa-github'></i></a>"
+            value: "<a href='https://github.com/dothtmlqc/hypetml' class='navbar__item navbar__link' rel='noopener noreferrer'><i class='fab fa-github'></i></a><a href='https://discord.gg/' class='navbar__item navbar__link' rel='noopener noreferrer'><i class='fab fa-discord'></i></a>"
 
           },
           {
@@ -85,7 +85,7 @@ const config = {
             position: 'right',
             dropdownItemsAfter: [
               {
-                to: 'https://my-site.com/help-us-translate',
+                to: 'https://github.com/dotHTMLQC/HypeTML/blob/main/translating.md',
                 label: 'Help us translate',
               },
             ],
@@ -117,16 +117,8 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
                 label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                href: "https://discordapp.com/invite/",
               },
             ],
           },
@@ -139,12 +131,12 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/dothtmlqc/hypetml",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} HypeTML by <a href="https://dothtml.ca" target="_blank">Dothtml</a>`,
+        copyright: `Copyright © ${new Date().getFullYear()} HypeTML by <a href="https://dothtml.ca" target="_blank">DotHTML</a>`,
       },
       prism: {
         theme: lightCodeTheme,
