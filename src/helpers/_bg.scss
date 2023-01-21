@@ -3,4 +3,27 @@
   .bg-#{$name} {
     background-color: $color;
   }
+  @each $breakpoint, $size in $breakpoints {
+    @if ($breakpoint != "xs") {
+      @include gen-media-breakpoint-min($breakpoint) {
+        .bg-#{$breakpoint}-#{$name} {
+          background-color: $color;
+        }
+      }
+    }
+  }
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+@each $breakpoint, $size in $breakpoints {
+  @if ($breakpoint != "xs") {
+    @include gen-media-breakpoint-min($breakpoint) {
+      .bg-#{$breakpoint}-transparent {
+        background-color: transparent;
+      }
+    }
+  }
 }

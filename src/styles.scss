@@ -12,22 +12,10 @@
 // @import "progress";
 
 @import "helpers/bg";
+@import "helpers/margin";
+@import "helpers/padding";
 
-/* Margins */
 
-@for $i from 1 through 5 {
-  .mx-#{$i} {
-    margin-left: #{$i * 0.25}rem;
-    margin-right: #{$i * 0.25}rem;
-  }
-}
-
-@for $i from 1 through 5 {
-    .my-#{$i} {
-      margin-top: #{$i * 0.25}rem;
-      margin-bottom: #{$i * 0.25}rem;
-    }
-  }
 
 
 

@@ -1,0 +1,54 @@
+@for $i from 0 through 5 {
+  .p-#{$i} {
+    padding: #{$i * 0.25}rem;
+  }
+  .pt-#{$i} {
+    padding-top: #{$i * 0.25}rem;
+  }
+  .pb-#{$i} {
+    padding-bottom: #{$i * 0.25}rem;
+  }
+  .pr-#{$i} {
+    padding-right: #{$i * 0.25}rem;
+  }
+  .pl-#{$i} {
+    padding-left: #{$i * 0.25}rem;
+  }
+  .px-#{$i} {
+    padding-left: #{$i * 0.25}rem;
+    padding-right: #{$i * 0.25}rem;
+  }
+  .py-#{$i} {
+    padding-top: #{$i * 0.25}rem;
+    padding-bottom: #{$i * 0.25}rem;
+  }
+  @each $breakpoint, $size in $breakpoints {
+    @if ($breakpoint != "xs") {
+      @include gen-media-breakpoint-min($breakpoint) {
+        .p-#{$breakpoint}-#{$i} {
+          padding: #{$i * 0.25}rem;
+        }
+        .pt-#{$breakpoint}-#{$i} {
+          padding-top: #{$i * 0.25}rem;
+        }
+        .pb-#{$breakpoint}-#{$i} {
+          padding-bottom: #{$i * 0.25}rem;
+        }
+        .pr-#{$breakpoint}-#{$i} {
+          padding-right: #{$i * 0.25}rem;
+        }
+        .pl-#{$breakpoint}-#{$i} {
+          padding-left: #{$i * 0.25}rem;
+        }
+        .px-#{$breakpoint}-#{$i} {
+          padding-left: #{$i * 0.25}rem;
+          padding-right: #{$i * 0.25}rem;
+        }
+        .py-#{$breakpoint}-#{$i} {
+          padding-top: #{$i * 0.25}rem;
+          padding-bottom: #{$i * 0.25}rem;
+        }
+      }
+    }
+  }
+}
