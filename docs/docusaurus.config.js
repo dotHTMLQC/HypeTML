@@ -2,7 +2,7 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const darkCodeTheme = require("prism-react-renderer/themes/nightOwl");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -147,8 +147,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} HypeTML by <a href="https://dothtml.ca" target="_blank">Dothtml</a>`,
       },
       prism: {
-        theme: require("prism-react-renderer/themes/github"),
-        darkTheme: require("prism-react-renderer/themes/NightOwl"),
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
       },
     }),
 };
