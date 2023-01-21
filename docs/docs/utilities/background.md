@@ -3,7 +3,9 @@ title: 'Background'
 ---
 
 :::danger
-    This feature is in beta, and may have unexpected behavior. Please report any bugs to the [GitHub repository](https://github.com/dothtmlqc/hypetml/). Thank you!
+
+This feature is in beta, and may have unexpected behavior. Please report any bugs to the [GitHub repository](https://github.com/dothtmlqc/hypetml/). Thank you!
+    
 :::
 
 # Background

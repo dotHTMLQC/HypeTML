@@ -57,7 +57,7 @@
   </head>
   <body style="font-family: sans-serif" class="dark" data-hype-theme="dark">
     <!-- Alerts -->
-    <button class="btn btn-primary mx-4 my-4" id="lights">Light Switch</button>
+    <button class="btn btn-primary mx-4 my-4" style="position: fixed;" id="lights">Light Switch</button>
 
     <section style="padding: 25px">
       <h1>Alerts</h1>
@@ -77,7 +77,6 @@
       <div class="alert alert-black my-2">This is a black alert</div>
       <div class="alert alert-success my-2">This is a success alert</div>
       <div class="alert alert-danger my-2">This is a danger alert</div>
-
     </section>
 
     <section style="padding: 25px">
@@ -157,7 +156,13 @@
 
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <div class="navbar-brand"><img src="https://cdn.dothtml.ca/hypetml/logo/vector/default-monochrome.svg" alt="logo" style="width: 50%"></div>
+          <div class="navbar-brand">
+            <img
+              src="https://cdn.dothtml.ca/hypetml/logo/vector/default-monochrome.svg"
+              alt="logo"
+              style="width: 50%"
+            />
+          </div>
 
           <!-- <button class="navbar-toggler">
             <span class="toggler-bars"></span>
@@ -189,6 +194,62 @@
           </div>
         </div>
       </nav>
+    </section>
+    <section id="progress" class="p-5">
+      <h1>Progress Bar</h1>
+      <div class="progress my-1">
+        <div class="progress-bar bg-primary" style="width: 25%"></div>
+      </div>
+      <div>
+        <h4>Style</h4>
+        <div class="progress my-1">
+          <div class="progress-bar bg-primary striped" style="width: 25%">
+            Stripped
+          </div>
+        </div>
+        <div class="progress my-1">
+          <div
+            class="progress-bar bg-primary striped animated-slow"
+            style="width: 25%">
+            Animated Slow
+          </div>
+        </div>
+        <div class="progress my-1">
+          <div
+            class="progress-bar bg-primary striped animated"
+            style="width: 25%">
+            Animated
+          </div>
+        </div>
+        <div class="progress my-1">
+          <div
+            class="progress-bar bg-primary striped animated-fast"
+            style="width: 25%">
+            Animated Fast
+          </div>
+        </div>
+
+
+
+        <h4>Colorful</h4>
+        <div class="progress my-1">
+          <div class="progress-bar bg-primary" style="width: 6.25%"></div>
+          <div class="progress-bar bg-secondary" style="width: 6.25%"></div>
+          <div class="progress-bar bg-red" style="width: 6.25%"></div>
+          <div class="progress-bar bg-orange" style="width: 6.25%"></div>
+          <div class="progress-bar bg-yellow" style="width: 6.25%"></div>
+          <div class="progress-bar bg-green" style="width: 6.25%"></div>
+          <div class="progress-bar bg-teal" style="width: 6.25%"></div>
+          <div class="progress-bar bg-blue" style="width: 6.25%"></div>
+          <div class="progress-bar bg-violet" style="width: 6.25%"></div>
+          <div class="progress-bar bg-magenta" style="width: 6.25%"></div>
+          <div class="progress-bar bg-pink" style="width: 6.25%"></div>
+          <div class="progress-bar bg-brown" style="width: 6.25%"></div>
+          <div class="progress-bar bg-gray" style="width: 6.25%"></div>
+          <div class="progress-bar bg-black" style="width: 6.25%"></div>
+          <div class="progress-bar bg-success" style="width: 6.25%"></div>
+          <div class="progress-bar bg-danger" style="width: 6.25%"></div>
+      </div>
     </section>
   </body>
 </html>
