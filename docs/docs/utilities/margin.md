@@ -14,7 +14,7 @@ Margin is a utility class that adds margin to an element.
 
 ## Syntax
 
-Margin classes always start with `m-` followed by some modifiers. For example, `m-1` adds margin of `1rem` to an element.
+Margin classes always start with `m-` followed by some modifiers.
 
 The full syntax is this: `m[direction]-[breakpoint]-{size}`
 
