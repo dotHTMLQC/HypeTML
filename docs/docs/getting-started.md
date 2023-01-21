@@ -3,46 +3,40 @@ sidebar_position: 1
 title: 'Getting Started'
 ---
 
-# Getting Started
+<head>
+    <link rel="stylesheet" href="/HypeTML/0.9.0.css"/>
+</head>
 
-Let's discover **Docusaurus in less than 5 minutes**.
+HypeTML is a Front-End framework for the modern web. It is designed to be easy to use, and to be as customizable as possible. Everything is packed to make a quick and beautiful website.
 
-## Getting Started
+# Quick Start
 
-Get started by **creating a new site**.
+To get started, you can use the CDN to get the latest version of HypeTML.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dothtmlqc/hypetml@latest/dist/HypeTML.css"/>
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+Or you can download the latest version here:
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+<button className="btn btn-hollow-primary disabled mx-2">Download CSS (COMING SOON)</button>
+<button className="btn btn-hollow-success disabled mx-2">Download JS (COMING SOON)</button>
 
-## Start your site
+Then include the files in your HTML file.
 
-Run the development server:
+Place the CSS file in the `<head>` tag.
 
-```bash
-cd my-website
-npm run start
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dothtmlqc/hypetml@latest/dist/HypeTML.css"/>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+    </body>
+</html>
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+You can now open the file in your browser start using HypeTML!
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
