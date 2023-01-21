@@ -1,5 +1,5 @@
 ---
-title: "Alerts"
+title: "Alertes"
 ---
 
 <head>
@@ -8,80 +8,80 @@ title: "Alerts"
 
 :::danger
 
-This component is still in development, some features may have unexpected behavior, and some features may not be implemented yet. Please create an issue on [GitHub](https://github.com/dothtmlqc/hypetml/issues) if you find any bugs or have any suggestions. Thank you!
+Ce composant est toujours en développement, certaines fonctionnalités peuvent avoir un comportement inattendu, et certaines fonctionnalités peuvent ne pas être implémentées. Veuillez créer un problème sur [GitHub](https://github.com/dothtmlqc/hypetml/issues) si vous rencontrez des bogues ou si vous avez des suggestions. Merci!
 
 :::
 
-# Alerts
+# Alertes
 
-Alerts are used to display important information to the user.
+Les alertes sont utilisées pour afficher des informations importantes à l'utilisateur.
 
-## Examples
+## Exemples
 
-You will find examples of all the different types of alerts below.
+Vous trouverez ci-dessous des exemples de toutes les différentes alertes.
 
-### Default
+### Défault
 
-Here is a simple primary alert.
+Voici une alerte primaire simple.
 
-<div className="alert alert-primary my-2">This is a primary alert!</div>
-
-```html
-<div class="alert alert-primary">This is a primary alert!</div>
-```
-
-### Colors
-
-Here are examples of all the different colors.
-
-<div className="alert alert-primary my-1">This is a primary alert!</div>
-<div className="alert alert-secondary my-1">This is a secondary alert!</div>
-<div className="alert alert-red my-1">This is a red alert!</div>
-<div className="alert alert-orange my-1">This is an orange alert!</div>
-<div className="alert alert-yellow my-1">This is a yellow alert!</div>
-<div className="alert alert-green my-1">This is a green alert!</div>
-<div className="alert alert-teal my-1">This is a teal alert</div>
-<div className="alert alert-blue my-1">This is a blue alert</div>
-<div className="alert alert-violet my-1">This is a violet alert</div>
-<div className="alert alert-magenta my-1">This is a magenta alert</div>
-<div className="alert alert-pink my-1">This is a pink alert</div>
-<div className="alert alert-brown my-1">This is a brown alert</div>
-<div className="alert alert-gray my-1">This is a gray alert!</div>
-<div className="alert alert-black my-1">This is a black alert!</div>
+<div className="alert alert-primary my-2">Ceci est une alerte primaire!</div>
 
 ```html
-<div class="alert alert-primary">This is a primary alert!</div>
-<div class="alert alert-secondary">This is a secondary alert!</div>
-<div class="alert alert-red">This is a red alert!</div>
-<div class="alert alert-orange">This is an orange alert!</div>
-<div class="alert alert-yellow">This is a yellow alert!</div>
-<div class="alert alert-green">This is a green alert!</div>
-<div class="alert alert-teal">This is a teal alert</div>
-<div class="alert alert-blue">This is a blue alert</div>
-<div class="alert alert-violet">This is a violet alert</div>
-<div class="alert alert-magenta">This is a magenta alert</div>
-<div class="alert alert-pink">This is a pink alert</div>
-<div class="alert alert-brown">This is a brown alert</div>
-<div class="alert alert-gray">This is a gray alert!</div>
-<div class="alert alert-black">This is a black alert!</div>
+<div class="alert alert-primary my-2">Ceci est une alerte primaire!</div>
 ```
 
-### Utilities
+### Couleurs
+
+Voici un exemple de toutes les couleurs d'alertes.
+
+<div className="alert alert-primary my-1">Ceci est une alerte primaire!</div>
+<div className="alert alert-secondary my-1">Ceci est une alerte secondaire!</div>
+<div className="alert alert-red my-1">Ceci est une alerte rouge!</div>
+<div className="alert alert-orange my-1">Ceci est une alerte orange!</div>
+<div className="alert alert-yellow my-1">Ceci est une alerte jaune!</div>
+<div className="alert alert-green my-1">Ceci est une alerte verte!</div>
+<div className="alert alert-teal my-1">Ceci est une alerte teal</div>
+<div className="alert alert-blue my-1">Ceci est une alerte bleue</div>
+<div className="alert alert-violet my-1">Ceci est une alerte violette</div>
+<div className="alert alert-magenta my-1">Ceci est une alerte magenta</div>
+<div className="alert alert-pink my-1">Ceci est une alerte rose</div>
+<div className="alert alert-brown my-1">Ceci est une alerte marron</div>
+<div className="alert alert-gray my-1">Ceci est une alerte grise!</div>
+<div className="alert alert-black my-1">Ceci est une alerte noire!</div>
+
+```html
+<div class="alert alert-primary">Ceci est une alerte primaire!</div>
+<div class="alert alert-secondary">Ceci est une alerte secondaire!</div>
+<div class="alert alert-red">Ceci est une alerte rouge!</div>
+<div class="alert alert-orange">Ceci est une alerte orange!</div>
+<div class="alert alert-yellow">Ceci est une alerte jaune!</div>
+<div class="alert alert-green">Ceci est une alerte verte!</div>
+<div class="alert alert-teal">Ceci est une alerte teal</div>
+<div class="alert alert-blue">Ceci est une alerte bleue</div>
+<div class="alert alert-violet">Ceci est une alerte violette</div>
+<div class="alert alert-magenta">Ceci est une alerte magenta</div>
+<div class="alert alert-pink">Ceci est une alerte rose</div>
+<div class="alert alert-brown">Ceci est une alerte marron</div>
+<div class="alert alert-gray">Ceci est une alerte grise!</div>
+<div class="alert alert-black">Ceci est une alerte noire!</div>
+```
+
+### Utilités
 
 :::info
 
-More Utilities will be added in a future update. Stay tuned!
+Plus d'utilités seront ajoutés dans une mise à jour future. Restez à l'écoute!
 
 :::
 
-Here are examples of all the different utilities alerts.
+Voici un exemple de toutes les alertes d'utilités.
 
-<div className="alert alert-success my-1">This is a success alert!</div>
-<div className="alert alert-danger my-1">This is a danger alert!</div>
+<div className="alert alert-success my-1">Ceci est une alerte success!</div>
+<div className="alert alert-danger my-1">Ceci est une alerte danger!</div>
 
 ```html
-<div class="alert alert-success">This is a success alert!</div>
-<div class="alert alert-danger">This is a danger alert!</div>
+<div class="alert alert-success">Ceci est une alerte success!</div>
+<div class="alert alert-danger">Ceci est une alerte danger!</div>
 ```
 
 
