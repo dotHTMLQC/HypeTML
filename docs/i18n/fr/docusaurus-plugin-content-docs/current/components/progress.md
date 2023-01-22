@@ -1,5 +1,5 @@
 ---
-title: "Progress Bars"
+title: "Barres de progression"
 ---
 
 <head>
@@ -8,17 +8,17 @@ title: "Progress Bars"
 
 :::danger
 
-This component is still in development, some features may have unexpected behavior, and some features may not be implemented yet. Please create an issue on [GitHub](https://github.com/dothtmlqc/hypetml/issues) if you find any bugs or have any suggestions. Thank you!
+Ce composant est toujours en développement, certaines fonctionnalités peuvent avoir un comportement inattendu, et certaines fonctionnalités peuvent ne pas être implémentées. Veuillez créer un problème sur [GitHub](https://github.com/dothtmlqc/hypetml/issues) si vous rencontrez des bogues ou si vous avez des suggestions. Merci!
 
 :::
 
-# Progress Bars
+# Barres de progression
 
-Progress bars are used to visualize a percentage. They can be used for example to show the progress of a download, or the progress of a task.
+Les barres de progression sont utilisées pour visualiser un pourcentage. Elles peuvent être utilisées par exemple pour montrer la progression d'un téléchargement ou la progression d'une tâche.
 
-## Example
+## Exemple
 
-### Primary Progress Bar
+### Barre de progression primaire
 
 <div className="progress my-2">
     <div className="progress-bar bg-primary" style={{width: "0%"}}></div>
@@ -53,23 +53,23 @@ Progress bars are used to visualize a percentage. They can be used for example t
 </div>
 ```
 
-### Label
+### Étiquette
 
-Progress bars can have a label. The label can be placed on the left, right, or centered.
+Les barres de progression peuvent avoir une étiquette. L'étiquette peut être placée à gauche, à droite ou au centre.
 
 <div className="progress my-2">
-    <div className="progress-bar bg-primary" style={{width: "50%"}}>This is a labeled progress</div>
+    <div className="progress-bar bg-primary" style={{width: "50%"}}>Ceci est une barre de progrès étiquetée!</div>
 </div>
 
 ```html
 <div class="progress my-1">
-    <div class="progress-bar bg-primary" style="width: 50%">This is a labeled progress</div>
+    <div class="progress-bar bg-primary" style="width: 50%">Ceci est une barre de progrès étiquetée!</div>
 </div>
 ```
 
-### Multiple Progresses
+### Plusieurs barres de progression
 
-You can have multiple colors in one progress bar.
+Vous pouvez avoir plusieurs couleurs dans une barre de progression.
 
 <div className="progress my-2">
     <div className="progress-bar bg-primary" style={{width: "25%"}}></div>
@@ -87,9 +87,9 @@ You can have multiple colors in one progress bar.
 
 
 
-### Striped
+### Rayures
 
-Progress bars can be striped. This adds a striped pattern to the progress bar.
+Les barres de progression peuvent être rayées. Cela ajoute un motif à la barre de progression.
 
 <div className="progress my-2">
     <div className="progress-bar bg-primary striped" style={{width: "50%"}}></div>
@@ -101,9 +101,9 @@ Progress bars can be striped. This adds a striped pattern to the progress bar.
 </div>
 ```
 
-### Animated
+### Animation
 
-Progress bars can be animated. This adds an animation to the progress bar.
+Les barres de progression peuvent être animées.
 
 <div className="progress my-2">
     <div className="progress-bar bg-primary striped animated" style={{width: "50%"}}></div>
@@ -115,23 +115,24 @@ Progress bars can be animated. This adds an animation to the progress bar.
 </div>
 ```
 
-#### Animation Speed
+#### Vitesse de l'animation
 
-You may use `animated-slow` or `animated-fast` instead of `animated` to change the animation speed.
+Vous pouvez utiliser `animated-slow` ou `animated-fast` à la place de `animated` pour changer la vitesse de l'animation.
 
 <div className="progress my-2">
-    <div className="progress-bar bg-primary striped animated-slow" style={{width: "50%"}}>Slow</div>
+    <div className="progress-bar bg-primary striped animated-slow" style={{width: "50%"}}>Lent</div>
 </div>
 <div className="progress my-2">
     <div className="progress-bar bg-primary striped animated" style={{width: "50%"}}>Normal</div>
 </div>
 <div className="progress my-2">
-    <div className="progress-bar bg-primary striped animated-fast" style={{width: "50%"}}>Fast</div>
+    <div className="progress-bar bg-primary striped animated-fast" style={{width: "50%"}}>Vite</div>
 </div>
 
 ### Colors
 
-Progress bars can have different colors. The following colors are available: `primary`, `secondary`, `red`, `orange`, `yellow`, `green`, `teal`, `blue`, `violet`, `magenta`, `pink`, `brown`, `gray`, `black`.
+
+Les barres de progression peuvent avoir différentes couleurs. Les couleurs suivantes sont disponibles: `primary`, `secondary`, `red`, `orange`, `yellow`, `green`, `teal`, `blue`, `violet`, `magenta`, `pink`, `brown`, `gray`, `black`.
 
 <div className="progress my-2">
     <div className="progress-bar bg-primary" style={{width: "50%"}}></div>
@@ -222,15 +223,15 @@ Progress bars can have different colors. The following colors are available: `pr
 </div>
 ```
 
-### Utilities
+### Utilités
 
 :::info
 
-More Utilities will be added in a future update. Stay tuned!
+Plus d'utilités seront ajoutés dans une future mise à jour. Restez à l'écoute!
 
 :::
 
-Here are some utility progress bars. They are useful for displaying the status of a task.
+Voici quelques barres de progression d'utilité. Elles sont utiles pour afficher l'état d'une tâche.
 
 <div className="progress my-2">
     <div className="progress-bar bg-success" style={{width: "25%"}}>25%</div>

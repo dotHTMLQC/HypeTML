@@ -8,6 +8,6 @@ title: "Navbars"
 
 :::danger
 
-This component is still in <u>**EARLY DEVELOPMENT**</u>. This component <u>**is not complete, or near compleated**</u>! Some features may and will have unexpected behavior. You can help by contributing to the project on [GitHub](https://github.com/dothtmlqc/hypetml/) if you wish to help. Thank you!
+Ce composant est toujours en <u>**DÉVELOPPEMENT**</u>. Ce composant <u>**n'est pas complet**</u>! Certaines fonctionnalités peuvent et auront un comportement inattendu. Vous pouvez aider en contribuant au projet sur [GitHub](https://gtihub.com/dothtmlqc/hypetml/) si vous souhaitez aider. Merci!
 
 :::
