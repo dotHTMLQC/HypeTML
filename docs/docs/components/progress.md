@@ -1,5 +1,7 @@
 ---
 title: "Progress Bars"
+description: "Progress bars are used to visualize a percentage. They can be used for example to show the progress of a download, or the progress of a task."
+tags: ["progress", "progress bar"]
 ---
 
 <head>

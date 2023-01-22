@@ -1,5 +1,7 @@
 ---
 title: "Buttons"
+description: "Buttons are used to trigger actions."
+tags: ["button", "action"]
 ---
 
 <head>

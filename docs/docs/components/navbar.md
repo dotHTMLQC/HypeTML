@@ -1,5 +1,7 @@
 ---
 title: "Navbars"
+description: "Navbars are used to help users navigate within your application."
+tags: ["navigation", "navbar"]
 ---
 
 <head>

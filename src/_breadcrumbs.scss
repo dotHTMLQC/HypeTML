@@ -1,0 +1,66 @@
+.breadcrumb {
+  padding: 4px 5px;
+  display: inline-block;
+  border-radius: 4px;
+  text-decoration: none;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+
+  .breadcrumb-item {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    color: map-get($theme-colors, "primary");
+    text-decoration: none;
+    transition: 0.3s;
+
+    a {
+      color: inherit;
+    }
+
+    & a:hover:not(.active) {
+      color: lighten(map-get($theme-colors, "primary"), 10%);
+      text-decoration: underline;
+    }
+
+    &.active {
+      color: #999;
+      &:hover {
+        cursor: text;
+      }
+    }
+  }
+  .divider {
+    &::before {
+      display: inline-block;
+      padding: 0 5px;
+      color: #999;
+      font-size: 14px;
+      line-height: 20px;
+      content: "/";
+    }
+    &.divider-chevron::before {
+      content: ">";
+    }
+    &.divider-arrow::before {
+      content: "→";
+    }
+    &.divider-dash::before {
+      content: "-";
+    }
+    &.divider-dot::before {
+      content: "•";
+    }
+    &.divider-pipe::before {
+      content: "|";
+    }
+    &.divider-backslash::before {
+      content: "\\";
+    }
+  }
+}

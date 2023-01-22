@@ -1,5 +1,7 @@
 ---
 title: "Alerts"
+description: "Alerts are used to display important information to the user."
+tags: ["alert", "notification"]
 ---
 
 <head>
