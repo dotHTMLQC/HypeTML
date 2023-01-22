@@ -25,7 +25,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "fr"],
+    locales: ["en"],
   },
 
   stylesheets: [
@@ -78,16 +78,6 @@ const config = {
             position: "right",
             value: "<a href='https://github.com/dothtmlqc/hypetml' class='navbar__item navbar__link' rel='noopener noreferrer'><i class='fab fa-github'></i></a><a href='https://discord.gg/' class='navbar__item navbar__link' rel='noopener noreferrer'><i class='fab fa-discord'></i></a>"
 
-          },
-          {
-            type: 'localeDropdown',
-            position: 'right',
-            dropdownItemsAfter: [
-              {
-                to: 'https://github.com/dotHTMLQC/HypeTML/blob/main/translating.md',
-                label: 'Help us translate',
-              },
-            ],
           },
           
         ],
