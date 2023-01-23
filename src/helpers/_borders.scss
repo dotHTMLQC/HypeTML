@@ -1,0 +1,65 @@
+@for $i from 0 through 5 {
+    .border-#{$i} {
+        border: $i * 1px solid;
+    }
+    .border-top-#{$i} {
+        border-top: $i * 1px solid;
+    }
+    .border-right-#{$i} {
+        border-right: $i * 1px solid;
+    }
+    .border-bottom-#{$i} {
+        border-bottom: $i * 1px solid;
+    }
+    .border-left-#{$i} {
+        border-left: $i * 1px solid;
+    }
+    .rounded-#{$i} {
+        border-radius: $i * 0.25rem;
+    }
+    .rounded-top-#{$i} {
+        border-top-left-radius: $i * 0.25rem;
+        border-top-right-radius: $i * 0.25rem;
+    }
+    .rounded-right-#{$i} {
+        border-top-right-radius: $i * 0.25rem;
+        border-bottom-right-radius: $i * 0.25rem;
+    }
+    .rounded-bottom-#{$i} {
+        border-bottom-right-radius: $i * 0.25rem;
+        border-bottom-left-radius: $i * 0.25rem;
+    }
+    .rounded-left-#{$i} {
+        border-top-left-radius: $i * 0.25rem;
+        border-bottom-left-radius: $i * 0.25rem;
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .border-#{$color} {
+        border-color: $value;
+    }
+    .border-top-#{$color} {
+        border-top-color: $value;
+    }
+    .border-right-#{$color} {
+        border-right-color: $value;
+    }
+    .border-bottom-#{$color} {
+        border-bottom-color: $value;
+    }
+    .border-left-#{$color} {
+        border-left-color: $value;
+    }
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
+
+.rounded-pill {
+    border-radius: 50rem;
+}
+
+
+

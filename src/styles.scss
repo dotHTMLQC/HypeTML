@@ -13,10 +13,12 @@
 @import "progress";
 
 @import "helpers/bg";
+@import "helpers/borders";
 @import "helpers/margin";
 @import "helpers/padding";
 
 
-
-
+*, ::after, ::before {
+  box-sizing: border-box;
+}
 
