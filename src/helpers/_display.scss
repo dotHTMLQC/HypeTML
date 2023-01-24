@@ -1,0 +1,84 @@
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-inline-block {
+  display: inline-block !important;
+}
+
+.d-inline {
+  display: inline !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.d-inline-flex {
+  display: inline-flex !important;
+}
+
+.d-grid {
+  display: grid !important;
+}
+
+.d-inline-grid {
+  display: inline-grid !important;
+}
+
+.d-table {
+  display: table !important;
+}
+
+.d-table-row {
+  display: table-row !important;
+}
+
+.d-table-cell {
+  display: table-cell !important;
+}
+
+/* foreach screen sizes */
+@each $breakpoint, $size in $breakpoints {
+  @if ($breakpoint != "xs") {
+    @include gen-media-breakpoint-min($breakpoint) {
+      .d-#{$breakpoint}-none {
+        display: none !important;
+      }
+      .d-#{$breakpoint}-block {
+        display: block !important;
+      }
+      .d-#{$breakpoint}-inline-block {
+        display: inline-block !important;
+      }
+      .d-#{$breakpoint}-inline {
+        display: inline !important;
+      }
+      .d-#{$breakpoint}-flex {
+        display: flex !important;
+      }
+      .d-#{$breakpoint}-inline-flex {
+        display: inline-flex !important;
+      }
+      .d-#{$breakpoint}-grid {
+        display: grid !important;
+      }
+      .d-#{$breakpoint}-inline-grid {
+        display: inline-grid !important;
+      }
+      .d-#{$breakpoint}-table {
+        display: table !important;
+      }
+      .d-#{$breakpoint}-table-row {
+        display: table-row !important;
+      }
+      .d-#{$breakpoint}-table-cell {
+        display: table-cell !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.placeholder {
+    position: static;
+    overflow: hidden;
+    animation: placeholderShine 2s linear infinite;
+    background: linear-gradient(to right, #eee 8%, #ddd 18%, #eee 33%);
+    background-size: 1200px 100%;
+    max-width: 30rem;
+    &.placeholder-text {
+        height: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+    &, & > ::before, & .placeholder-image.placeholder-header::after, & .placeholder-text, & .placeholder-text::after {
+        background-color: #fff;
+    }
+}
+
+@keyframes placeholderShine {
+    0% {
+        background-position: -1200px 0;
+    }
+    100% {
+        background-position: 1200px 0;
+    }
+}
