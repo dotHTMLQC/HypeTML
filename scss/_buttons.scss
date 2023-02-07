@@ -8,8 +8,6 @@
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
-
-  border: 1px solid transparent;
   border-radius: 0.25rem;
 
   color: #212529;
@@ -32,13 +30,11 @@
   &.btn-sm {
     padding: 0.25rem 0.5rem;
     font-size: 0.875rem;
-    line-height: 1.5;
     border-radius: 0.2rem;
   }
   &.btn-lg {
     padding: 0.5rem 1rem;
     font-size: 1.25rem;
-    line-height: 1.5;
     border-radius: 0.3rem;
   }
   /* pill */
@@ -63,6 +59,8 @@
   @each $name, $color in $theme-colors {
     &.btn-#{$name} {
       background-color: $color;
+
+      border: $color 2px solid;
       @if ($name == "standard") {
         color: #212529;
       } @else {
@@ -74,12 +72,14 @@
   @each $name, $color in $theme-colors {
     &.btn-#{$name}:hover:not(.disabled):not([disabled]) {
       background-color: darken($color, 10%);
+      border-color: darken($color, 10%);
     }
   }
   /* clicked */
   @each $name, $color in $theme-colors {
     &.btn-#{$name}:active:not(.disabled):not([disabled]) {
       background-color: darken($color, 20%);
+      border-color: darken($color, 20%);
     }
   }
   /* hollow */
@@ -90,7 +90,7 @@
       background-color: transparent;
       border: $color 2px solid;
       &:hover:not(.disabled):not([disabled]) {
-        @if($name == "standard") {
+        @if ($name == "standard") {
           color: #212529;
         } @else {
           color: white;
@@ -103,7 +103,7 @@
       &.mono {
         border-color: #8c8c8c;
         color: #8c8c8c;
-        transition: 0.3s
+        transition: 0.3s;
       }
       &.mono:hover:not(.disabled):not([disabled]) {
         border-color: $color;

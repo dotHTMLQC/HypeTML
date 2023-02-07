@@ -89,6 +89,10 @@ const config = {
           label: "Documentation",
         },
         {
+          type: 'docsVersionDropdown',
+          position: 'right',
+        },
+        {
           type: "html",
           position: "right",
           value:
