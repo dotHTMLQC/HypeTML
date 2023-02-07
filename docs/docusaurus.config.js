@@ -38,6 +38,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          lastVersion: "23w06a",
+          includeCurrentVersion: false,
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -60,7 +62,7 @@ const config = {
 
       indexName: "hypetml-dothtml",
 
-      placeholder: 'Search in the docs',
+      placeholder: "Search in the docs",
 
       // Optional: see doc section below
       contextualSearch: true,
@@ -89,8 +91,8 @@ const config = {
           label: "Documentation",
         },
         {
-          type: 'docsVersionDropdown',
-          position: 'right',
+          type: "docsVersionDropdown",
+          position: "right",
         },
         {
           type: "html",
