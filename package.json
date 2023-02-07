@@ -7,7 +7,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass scss/:dist/css/ --style expanded --source-map && sass scss/:dist/css/ --style compressed --source-map",
+    "dev": "sass scss/:dist/css/ --style expanded --source-map --watch"
   },
   "author": "",
   "license": "ISC",
